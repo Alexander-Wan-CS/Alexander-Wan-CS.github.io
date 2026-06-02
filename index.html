@@ -8,7 +8,7 @@
   <!-- LinkedIn / Social Preview -->
   <meta property="og:title" content="Alexander Wan — Civil Engineering & Computer Science" />
   <meta property="og:description" content="Civil engineer with field experience in materials testing, now expanding into software. Based in Calgary, AB." />
-  <meta property="og:image" content="linkedin-thumbnail.jpg" />
+  <meta property="og:image" content="https://alexanderwan68-sys.github.io/linkedin-thumbnail.jpg" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -274,6 +274,17 @@
       nav { padding: 1rem 1.25rem; }
       nav .links { gap: 1.25rem; }
     }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero .eyebrow  { animation: heroFadeUp 0.8s ease 0.2s forwards; opacity: 0; }
+    .hero h1        { animation: heroFadeUp 0.8s ease 0.45s forwards; opacity: 0; }
+    .hero p         { animation: heroFadeUp 0.8s ease 0.65s forwards; opacity: 0; }
+    .hero-btns      { animation: heroFadeUp 0.8s ease 0.85s forwards; opacity: 0; }
+    .scroll-hint    { animation: heroFadeUp 0.8s ease 1.1s forwards; opacity: 0; }
 
     .fade-in {
       opacity: 0;
